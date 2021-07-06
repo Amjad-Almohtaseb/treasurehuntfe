@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+body {
+  background-image: url("https://www.wanderquest.in/monthly-subscription-boxes-for-kids-6-to-12-years/modules//smartblog/images/15-single-default.jpg");
+  color: #012354 !important;
+}
