@@ -16,28 +16,23 @@ const NavBar = () => {
           <>
             <h2 style={{ marginRight: "150px" }}>hello {user.username}</h2>
 
-            <button
-              style={{ color: "white" }}
-              className="nav-item btn btn-success"
-              onClick={() => dispatch(signout(history))}
-            >
-              signOut
-            </button>
-          </>
-        ) : (
-          <>
-            <NavItem
+            <div
               style={{
+                marginTop: "7px",
+                cursor: "pointer",
                 textDecoration: "none",
                 fontSize: "30px",
                 color: "#012354",
                 textShadow: "2px 2px 5px white",
               }}
               className="nav-item"
-              to="/"
+              onClick={() => dispatch(signout(history))}
             >
-              Home
-            </NavItem>
+              signout
+            </div>
+          </>
+        ) : (
+          <>
             <NavItem
               style={{
                 textDecoration: "none",
@@ -65,6 +60,18 @@ const NavBar = () => {
             </NavItem>
           </>
         )}
+        <NavItem
+          style={{
+            textDecoration: "none",
+            fontSize: "30px",
+            color: "#012354",
+            textShadow: "2px 2px 5px white",
+          }}
+          className="nav-item"
+          to="/"
+        >
+          Home
+        </NavItem>
       </div>
     </nav>
   );

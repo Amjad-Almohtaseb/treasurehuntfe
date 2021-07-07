@@ -8,7 +8,7 @@ export const signup = (userData, history) => {
     try {
       const res = await instance.post("/signup", userData);
       dispatch(setUser(res.data.token));
-      Swal.fire("Any fool can use a computer ");
+      Swal.fire("welcome to my treasure hunt");
       history.push("/");
     } catch (error) {
       console.log(error.message);
@@ -22,7 +22,7 @@ export const signin = (userData, history) => {
       const res = await instance.post("/signin", userData);
       dispatch(setUser(res.data.token));
       history.push("/");
-      Swal.fire("Any fool can use a computer ");
+      Swal.fire("welcome back to my treasure hunt");
     } catch (error) {
       console.log(error.message);
     }

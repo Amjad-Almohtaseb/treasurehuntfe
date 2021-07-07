@@ -15,13 +15,19 @@ const TreasureList = () => {
   });
 
   const treasuresList = treasures.map((treasure) => (
-    <li style={{ listStyle: "none" }}>{treasure.name}</li>
+    <li style={{ listStyle: "none", fontSize: "30px", fontFamily: "cursive" }}>
+      {treasure.name}
+    </li>
   ));
   if (!user) return <Redirect to="/" />;
   return (
     <center>
-      {" "}
-      <ul>{treasuresList}</ul>
+      <div
+        style={{ border: "double 7px black", padding: "10px", width: "30%" }}
+      >
+        {" "}
+        <ul>{treasuresList}</ul>
+      </div>
     </center>
   );
 };

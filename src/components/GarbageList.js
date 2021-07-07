@@ -12,8 +12,11 @@ const GarbageList = () => {
 
   return (
     <center>
-      {" "}
-      <ul>{garbagesList}</ul>
+      <div
+        style={{ border: "double 7px black", padding: "10px", width: "30%" }}
+      >
+        <ul>{garbagesList}</ul>
+      </div>
     </center>
   );
 };
